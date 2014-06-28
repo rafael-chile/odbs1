@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0" class="java.beans.XMLDecoder">
+ <object class="com.jformdesigner.model.FormModel">
+  <void property="contentType">
+   <string>form/swing</string>
+  </void>
+  <void property="root">
+   <object class="com.jformdesigner.model.FormRoot">
+    <void method="add">
+     <object class="com.jformdesigner.model.FormWindow">
+      <string>javax.swing.JFrame</string>
+      <object class="com.jformdesigner.model.FormLayoutManager">
+       <class>java.awt.BorderLayout</class>
+      </object>
+      <void method="setProperty">
+       <string>$sizePolicy</string>
+       <int>0</int>
+      </void>
+      <void method="setProperty">
+       <string>$locationPolicy</string>
+       <int>1</int>
+      </void>
+      <void method="setProperty">
+       <string>background</string>
+       <object class="java.awt.Color">
+        <int>153</int>
+        <int>153</int>
+        <int>153</int>
+        <int>255</int>
+       </object>
+      </void>
+      <void method="setProperty">
+       <string>resizable</string>
+       <boolean>false</boolean>
+      </void>
+      <void method="setProperty">
+       <string>title</string>
+       <string>Seriology IMDb Project</string>
+      </void>
+      <void method="setProperty">
+       <string>iconImage</string>
+       <object class="com.jformdesigner.model.SwingIcon">
+        <int>1</int>
+        <string>C:\Users\Usuario2\Desktop\Ontologies project\Data-Database-icon.png</string>
+       </object>
+      </void>
+      <void method="add">
+       <object class="com.jformdesigner.model.FormContainer">
+        <string>javax.swing.JPanel</string>
+        <object class="com.jformdesigner.model.FormLayoutManager">
+         <class>java.awt.BorderLayout</class>
+        </object>
+        <void method="setProperty">
+         <string>border</string>
+         <object class="javax.swing.border.EmptyBorder">
+          <int>12</int>
+          <int>12</int>
+          <int>12</int>
+          <int>12</int>
+         </object>
+        </void>
+        <void method="setProperty">
+         <string>background</string>
+         <object class="java.awt.Color">
+          <int>102</int>
+          <int>102</int>
+          <int>102</int>
+          <int>255</int>
+         </object>
+        </void>
+        <void property="name">
+         <string>dialogPane</string>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormContainer">
+          <string>javax.swing.JPanel</string>
+          <object class="com.jformdesigner.model.FormLayoutManager">
+           <class>org.jdesktop.layout.GroupLayout</class>
+           <void method="setProperty">
+            <string>$horizontalGroup</string>
+            <string>par l {seq t {par t {comp tabbedPane1::l::510:x, comp buttonBar::l::510:x, seq l {space :p:209:p, comp label1:::p::p, space ::219:p}}, space :::p}}</string>
+           </void>
+           <void method="setProperty">
+            <string>$verticalGroup</string>
+            <string>par l {seq l {comp label1:::p::p, space u:::p, comp tabbedPane1:::p:533:p, space :::p, comp buttonBar::::36:x, space :p:3:p}}</string>
+           </void>
+          </object>
+          <void method="setProperty">
+           <string>background</string>
+           <object class="java.awt.Color">
+            <int>102</int>
+            <int>102</int>
+            <int>102</int>
+            <int>255</int>
+           </object>
+          </void>
+          <void property="name">
+           <string>contentPanel</string>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormContainer">
+            <string>javax.swing.JTabbedPane</string>
+            <object class="com.jformdesigner.model.FormLayoutManager">
+             <class>javax.swing.JTabbedPane</class>
+            </object>
+            <void property="name">
+             <string>tabbedPane1</string>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormContainer">
+              <string>javax.swing.JPanel</string>
+              <object class="com.jformdesigner.model.FormLayoutManager">
+               <class>org.jdesktop.layout.GroupLayout</class>
+               <void method="setProperty">
+                <string>$horizontalGroup</string>
+                <string>par l {seq t {par t {seq l {space :::p, comp plotsH4:::::x:1}, seq l {space :p:13:p, comp plotsH5:::::x}, seq l {space :::p, comp plotsH3:::::x:1}}, space :::p}}</string>
+               </void>
+               <void method="setProperty">
+                <string>$verticalGroup</string>
+                <string>par l {seq l {space :p:16:p, comp plotsH3:::p:77:p, space :::p, comp plotsH4:::::x, space :::p, comp plotsH5:::p::p, space :::p}}</string>
+               </void>
+              </object>
+              <void property="name">
+               <string>panel2</string>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormContainer">
+                <string>javax.swing.JPanel</string>
+                <object class="com.jformdesigner.model.FormLayoutManager">
+                 <class>org.jdesktop.layout.GroupLayout</class>
+                 <void method="setProperty">
+                  <string>$horizontalGroup</string>
+                  <string>par l {seq {space :::p, par l {seq {comp label6:::p::p, space s:::p, comp nameF1:::p:142:p, space u:::p, comp label7:::p::p, space u:::p, comp colorF1::::213:x}, comp SaveF1::t:p:80:p}, space :::p}}</string>
+                 </void>
+                 <void method="setProperty">
+                  <string>$verticalGroup</string>
+                  <string>par l {seq l {par l {par b:l {comp colorF1::b:p::p, comp label7::b:p::p}, par b:l {comp label6::b:p::p, comp nameF1::b:p::p}}, space :::p, comp SaveF1:::p::p, space :::x}}</string>
+                 </void>
+                </object>
+                <void method="setProperty">
+                 <string>toolTipText</string>
+                 <string>ddd</string>
+                </void>
+                <void method="setProperty">
+                 <string>border</string>
+                 <object class="javax.swing.border.TitledBorder">
+                  <string>Create Plot</string>
+                 </object>
+                </void>
+                <void property="name">
+                 <string>plotsH3</string>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Name:</string>
+                  </void>
+                  <void property="name">
+                   <string>label6</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Color:</string>
+                  </void>
+                  <void property="name">
+                   <string>label7</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JTextField</string>
+                  <void property="name">
+                   <string>nameF1</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JTextField</string>
+                  <void property="name">
+                   <string>colorF1</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Save</string>
+                  </void>
+                  <void property="name">
+                   <string>SaveF1</string>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormContainer">
+                <string>javax.swing.JPanel</string>
+                <object class="com.jformdesigner.model.FormLayoutManager">
+                 <class>org.jdesktop.layout.GroupLayout</class>
+                 <void method="setProperty">
+                  <string>$horizontalGroup</string>
+                  <string>par l {seq l {space :::p, par l {seq l {comp label14:::p::p, space u:::p, comp radioButton1:::p::p, space :2:2:p, comp radioButton2:::p::p, space :::p}, seq l {par l {comp label9::l:p::p:1, seq l {comp label8:::p::p, space u:::p, comp comboBox2::::108:x}, comp scrollPane2:::p:171:p:1}, space s:::p, par l {comp okButton6:::p:49:p, comp okButton5::l:p:49:p}, space :p:11:p, par t {seq {comp label10:::p::p, space ::57:x, comp okButton4:::p:95:p, space ::20:x}, seq l {comp scrollPane3:::p:202:p:1, space :::p}}}}}}</string>
+                 </void>
+                 <void method="setProperty">
+                  <string>$verticalGroup</string>
+                  <string>par l {seq l {space :::p, par b {comp label8::b:p::p, comp comboBox2::b:p::p, comp label10::b:p::p, comp okButton4::b:p::p}, space :p:11:p, comp label9:::p::p, space :::p, par l {comp scrollPane3::::208:x:1, seq l {comp okButton5:::p::p, space :p:18:p, comp okButton6:::p::p, space :p:92:p}, comp scrollPane2::l::208:x}, space :p::p, par b {comp radioButton1::b:p::p, comp radioButton2::b:p::p, comp label14::b:p::p}}}</string>
+                 </void>
+                </object>
+                <void method="setProperty">
+                 <string>toolTipText</string>
+                 <string>ddd</string>
+                </void>
+                <void method="setProperty">
+                 <string>border</string>
+                 <object class="javax.swing.border.TitledBorder">
+                  <string>Tags</string>
+                 </object>
+                </void>
+                <void property="name">
+                 <string>plotsH4</string>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JComboBox</string>
+                  <void property="name">
+                   <string>comboBox2</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Select Plot:</string>
+                  </void>
+                  <void property="name">
+                   <string>label8</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormContainer">
+                  <string>javax.swing.JScrollPane</string>
+                  <object class="com.jformdesigner.model.FormLayoutManager">
+                   <class>javax.swing.JScrollPane</class>
+                  </object>
+                  <void property="name">
+                   <string>scrollPane2</string>
+                  </void>
+                  <void method="add">
+                   <object class="com.jformdesigner.model.FormComponent">
+                    <string>javax.swing.JList</string>
+                    <void property="name">
+                     <string>list2</string>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Tags in the Plot:</string>
+                  </void>
+                  <void property="name">
+                   <string>label9</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormContainer">
+                  <string>javax.swing.JScrollPane</string>
+                  <object class="com.jformdesigner.model.FormLayoutManager">
+                   <class>javax.swing.JScrollPane</class>
+                  </object>
+                  <void property="name">
+                   <string>scrollPane3</string>
+                  </void>
+                  <void method="add">
+                   <object class="com.jformdesigner.model.FormComponent">
+                    <string>javax.swing.JList</string>
+                    <void property="name">
+                     <string>list3</string>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Tag List:</string>
+                  </void>
+                  <void property="name">
+                   <string>label10</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Execute</string>
+                  </void>
+                  <void property="name">
+                   <string>okButton4</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>&lt;</string>
+                  </void>
+                  <void property="name">
+                   <string>okButton5</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>&gt;</string>
+                  </void>
+                  <void property="name">
+                   <string>okButton6</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Tag Operator:</string>
+                  </void>
+                  <void property="name">
+                   <string>label14</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JRadioButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Conjunctive</string>
+                  </void>
+                  <void property="name">
+                   <string>radioButton1</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JRadioButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Disjunctive</string>
+                  </void>
+                  <void property="name">
+                   <string>radioButton2</string>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormContainer">
+                <string>javax.swing.JPanel</string>
+                <object class="com.jformdesigner.model.FormLayoutManager">
+                 <class>org.jdesktop.layout.GroupLayout</class>
+                 <void method="setProperty">
+                  <string>$horizontalGroup</string>
+                  <string>par l {seq l {space :::p, comp label12:::p::p, space :::p, comp label11:::p::p, space :::p, comp spinner2:::p:63:p, space s:::p, comp label13:::p::p, space u:::p, comp spinner3:::p:63:p, space ::68:x, comp okButton7:::p:106:p, space :::p}}</string>
+                 </void>
+                 <void method="setProperty">
+                  <string>$verticalGroup</string>
+                  <string>par l {seq l {space :::p, par b {comp label12::b:p::p, comp label11::b:p::p, comp label13::b:p::p, comp okButton7::b:p::p, comp spinner2::b:p::p, comp spinner3::b:p::p}, space :::x}}</string>
+                 </void>
+                </object>
+                <void method="setProperty">
+                 <string>toolTipText</string>
+                 <string>ddd</string>
+                </void>
+                <void method="setProperty">
+                 <string>border</string>
+                 <object class="javax.swing.border.TitledBorder" id="TitledBorder0">
+                  <string>Query</string>
+                 </object>
+                </void>
+                <void property="name">
+                 <string>plotsH5</string>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>From:</string>
+                  </void>
+                  <void property="name">
+                   <string>label11</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>PLOT</string>
+                  </void>
+                  <void property="name">
+                   <string>okButton7</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>To:</string>
+                  </void>
+                  <void property="name">
+                   <string>label13</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Period Range:</string>
+                  </void>
+                  <void property="name">
+                   <string>label12</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JSpinner</string>
+                  <void property="name">
+                   <string>spinner2</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JSpinner</string>
+                  <void property="name">
+                   <string>spinner3</string>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <null/>
+              <void method="setProperty">
+               <string>title</string>
+               <string>Historical Tag Occurrence</string>
+              </void>
+             </object>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormContainer">
+              <string>javax.swing.JPanel</string>
+              <object class="com.jformdesigner.model.FormLayoutManager">
+               <class>org.jdesktop.layout.GroupLayout</class>
+               <void method="setProperty">
+                <string>$horizontalGroup</string>
+                <string>par l {seq t {space :::p, par t {comp plotsH7::l:::x:1, comp plotsH8::t:p::p}, space :::p}}</string>
+               </void>
+               <void method="setProperty">
+                <string>$verticalGroup</string>
+                <string>par l {seq t {space :::p, comp plotsH7:::::x, space :::p, comp plotsH8:::p::p, space :::p}}</string>
+               </void>
+              </object>
+              <void property="name">
+               <string>panel3</string>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormContainer">
+                <string>javax.swing.JPanel</string>
+                <object class="com.jformdesigner.model.FormLayoutManager">
+                 <class>org.jdesktop.layout.GroupLayout</class>
+                 <void method="setProperty">
+                  <string>$horizontalGroup</string>
+                  <string>par l {seq t {space :::p, par l {comp label18::l:p::p:1, comp scrollPane4:::p:171:p:1}, space :::p, par t {comp okButton11:::p:49:p, comp okButton10::t:p:49:p}, space u:::p, par l:::p {seq l:::1 {space :10:10:10, comp label19:::p::p, space :::x, comp okButton9:::p:95:p}, comp progressBar2::l:::x:1, comp scrollPane5::l::207:x:1}, space ::20:x}}</string>
+                 </void>
+                 <void method="setProperty">
+                  <string>$verticalGroup</string>
+                  <string>par l {seq l {space :::p, par b {comp label19::b:p::p, comp okButton9::b:p::p}, space :p:11:p, par t {comp label18:::p::p, comp progressBar2:::p::p}, space :::p, par l {seq l {comp okButton10:::p::p, space :p:18:p, comp okButton11:::p::p}, comp scrollPane4::l::310:x, comp scrollPane5::l::310:x}, space :p::p}}</string>
+                 </void>
+                </object>
+                <void method="setProperty">
+                 <string>toolTipText</string>
+                 <string>ddd</string>
+                </void>
+                <void method="setProperty">
+                 <string>border</string>
+                 <object class="javax.swing.border.TitledBorder">
+                  <string>Series</string>
+                 </object>
+                </void>
+                <void property="name">
+                 <string>plotsH7</string>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormContainer">
+                  <string>javax.swing.JScrollPane</string>
+                  <object class="com.jformdesigner.model.FormLayoutManager">
+                   <class>javax.swing.JScrollPane</class>
+                  </object>
+                  <void property="name">
+                   <string>scrollPane4</string>
+                  </void>
+                  <void method="add">
+                   <object class="com.jformdesigner.model.FormComponent">
+                    <string>javax.swing.JList</string>
+                    <void property="name">
+                     <string>list4</string>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Plot Actor co-Appearance from:</string>
+                  </void>
+                  <void property="name">
+                   <string>label18</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormContainer">
+                  <string>javax.swing.JScrollPane</string>
+                  <object class="com.jformdesigner.model.FormLayoutManager">
+                   <class>javax.swing.JScrollPane</class>
+                  </object>
+                  <void property="name">
+                   <string>scrollPane5</string>
+                  </void>
+                  <void method="add">
+                   <object class="com.jformdesigner.model.FormComponent">
+                    <string>javax.swing.JList</string>
+                    <void property="name">
+                     <string>list5</string>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JLabel</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Series List:</string>
+                  </void>
+                  <void property="name">
+                   <string>label19</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>Execute</string>
+                  </void>
+                  <void property="name">
+                   <string>okButton9</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>&lt;</string>
+                  </void>
+                  <void property="name">
+                   <string>okButton10</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>&gt;</string>
+                  </void>
+                  <void property="name">
+                   <string>okButton11</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JProgressBar</string>
+                  <void property="name">
+                   <string>progressBar2</string>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormContainer">
+                <string>javax.swing.JPanel</string>
+                <object class="com.jformdesigner.model.FormLayoutManager">
+                 <class>org.jdesktop.layout.GroupLayout</class>
+                 <void method="setProperty">
+                  <string>$horizontalGroup</string>
+                  <string>par l {seq t {space ::354:x, comp okButton12:::p:106:p, space :::p}}</string>
+                 </void>
+                 <void method="setProperty">
+                  <string>$verticalGroup</string>
+                  <string>par l {seq t {space :::x, comp okButton12:::p::p, space :::p}}</string>
+                 </void>
+                </object>
+                <void method="setProperty">
+                 <string>toolTipText</string>
+                 <string>ddd</string>
+                </void>
+                <void method="setProperty">
+                 <string>border</string>
+                 <object idref="TitledBorder0"/>
+                </void>
+                <void property="name">
+                 <string>plotsH8</string>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JButton</string>
+                  <void method="setProperty">
+                   <string>text</string>
+                   <string>PLOT</string>
+                  </void>
+                  <void property="name">
+                   <string>okButton12</string>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <null/>
+              <void method="setProperty">
+               <string>title</string>
+               <string>Actor co-Appearance</string>
+              </void>
+             </object>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormContainer">
+              <string>javax.swing.JPanel</string>
+              <object class="com.jformdesigner.model.FormLayoutManager">
+               <class>org.jdesktop.layout.GroupLayout</class>
+               <void method="setProperty">
+                <string>$horizontalGroup</string>
+                <string>par l {space :0:505:x}</string>
+               </void>
+               <void method="setProperty">
+                <string>$verticalGroup</string>
+                <string>par l {space :0:505:x}</string>
+               </void>
+              </object>
+              <void property="name">
+               <string>panel1</string>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <null/>
+              <void method="setProperty">
+               <string>title</string>
+               <string>Explorer</string>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormComponent">
+            <string>javax.swing.JLabel</string>
+            <void method="setProperty">
+             <string>text</string>
+             <string>IMDb Graphs</string>
+            </void>
+            <void method="setProperty">
+             <string>font</string>
+             <object class="com.jformdesigner.model.SwingDerivedFont">
+              <null/>
+              <int>1</int>
+              <int>13</int>
+              <boolean>true</boolean>
+             </object>
+            </void>
+            <void method="setProperty">
+             <string>foreground</string>
+             <object class="java.awt.Color" field="white"/>
+            </void>
+            <void property="name">
+             <string>label1</string>
+            </void>
+           </object>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormContainer">
+            <string>javax.swing.JPanel</string>
+            <object class="com.jformdesigner.model.FormLayoutManager">
+             <class>java.awt.GridBagLayout</class>
+             <void method="setProperty">
+              <string>$columnSpecs</string>
+              <string>0:1.0, 80, 80, 80</string>
+             </void>
+             <void method="setProperty">
+              <string>$rowSpecs</string>
+              <string>0</string>
+             </void>
+             <void method="setProperty">
+              <string>$hGap</string>
+              <int>5</int>
+             </void>
+             <void method="setProperty">
+              <string>$vGap</string>
+              <int>5</int>
+             </void>
+            </object>
+            <void method="setProperty">
+             <string>border</string>
+             <object class="javax.swing.border.EmptyBorder">
+              <int>12</int>
+              <int>0</int>
+              <int>0</int>
+              <int>0</int>
+             </object>
+            </void>
+            <void method="setProperty">
+             <string>background</string>
+             <object class="java.awt.Color">
+              <int>102</int>
+              <int>102</int>
+              <int>102</int>
+              <int>255</int>
+             </object>
+            </void>
+            <void property="name">
+             <string>buttonBar</string>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormComponent">
+              <string>javax.swing.JButton</string>
+              <void method="setProperty">
+               <string>text</string>
+               <string>Cancel</string>
+              </void>
+              <void property="name">
+               <string>cancelButton</string>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+              <void method="setProperty">
+               <string>gridx</string>
+               <int>2</int>
+              </void>
+             </object>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormComponent">
+              <string>javax.swing.JButton</string>
+              <void method="setProperty">
+               <string>text</string>
+               <string>Help</string>
+              </void>
+              <void property="name">
+               <string>helpButton</string>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+              <void method="setProperty">
+               <string>gridx</string>
+               <int>3</int>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+         </object>
+         <object class="com.jformdesigner.model.FormLayoutConstraints">
+          <class>java.lang.String</class>
+          <void method="setProperty">
+           <string>value</string>
+           <string>Center</string>
+          </void>
+         </object>
+        </void>
+       </object>
+       <object class="com.jformdesigner.model.FormLayoutConstraints">
+        <class>java.lang.String</class>
+        <void method="setProperty">
+         <string>value</string>
+         <string>Center</string>
+        </void>
+       </object>
+      </void>
+      <void property="name">
+       <string>this</string>
+      </void>
+     </object>
+     <object class="com.jformdesigner.model.FormLayoutConstraints">
+      <null/>
+      <void method="setProperty">
+       <string>location</string>
+       <object class="java.awt.Point">
+        <int>0</int>
+        <int>0</int>
+       </object>
+      </void>
+      <void method="setProperty">
+       <string>size</string>
+       <object class="java.awt.Dimension">
+        <int>550</int>
+        <int>665</int>
+       </object>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
