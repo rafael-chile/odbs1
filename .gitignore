@@ -34,3 +34,6 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+target/classes/META-INF/maven/it.unibz.inf.ontop/ontop-examples/pom.properties
+src/main/resources/imdb/seriology.obda

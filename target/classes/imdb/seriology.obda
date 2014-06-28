@@ -9,7 +9,7 @@ rdfs:		http://www.w3.org/2000/01/rdf-schema#
 sourceUri	postgresDB
 connectionUrl	jdbc:postgresql://localhost:5433/IMDb
 username	postgres
-password	admin123
+password	admin12
 driverClass	org.postgresql.Driver
 
 [MappingDeclaration] @collection [[
