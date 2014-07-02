@@ -98,7 +98,7 @@ mappingId	Series + Series_Title + Production_Year (for Series)
 target		:series-{id} a :Series ; :Series_Title {title} ; :Production_Year {production_year} . 
 source		SELECT id, title, production_year
 			FROM title 
-			WHERE kind_id = 7
+			WHERE kind_id = 2
 
 mappingId	Season + Season_Number
 target		:series-{ep.episode_of_id}-season-{ep.season_nr} a :Season ; :Season_Number {season_nr} . 

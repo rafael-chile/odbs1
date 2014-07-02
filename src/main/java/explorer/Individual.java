@@ -29,8 +29,10 @@ public class Individual {
 		ArrayList<Individual> ans = new ArrayList<Individual>();
 		try {
 			if(category.equals(Global.catSeason)) {
-				ans.add(new Individual(rs.getOWLObject(1).toString(),
-						"Season " + rs.getOWLObject(3).toString() + " [" + rs.getOWLObject(2).toString() + "]"));
+				while (rs.nextRow()) {
+					ans.add(new Individual(rs.getOWLObject(1).toString(),
+							"Season " + rs.getOWLObject(3).toString() + " [" + rs.getOWLObject(2).toString() + "]"));
+				}
 			} else {
 				while (rs.nextRow()) {
 					ans.add(new Individual(rs.getOWLObject(1).toString(), rs.getOWLObject(2).toString()));

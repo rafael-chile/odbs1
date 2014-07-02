@@ -42,7 +42,7 @@ public class Global {
 	//TANU
 	public static final String queryPersonToProduction = "In which productions did he or she worked?";
 	public static final String queryPersonToPerson = "Who did he work with?";
-	public static final String queryPersonToCharacter = "What characters did her or she portrayed?";
+	public static final String queryPersonToCharacter = "What characters did he or she portrayed?";
 	//ADRI
 	public static final String queryCompanyToCompany = "What companies are based in the same country?";
 	public static final String queryCompanyToProduction = "What productions were produced by them?";
@@ -77,7 +77,7 @@ public class Global {
 	
 	public static final String newline = System.getProperty("line.separator");
 	public static final String logSeparator = "---------------------------------";
-	public static Integer limit = 0;
+	public static Integer limit = 10;
 	public static final String owlfile = "src/main/resources/imdb/seriology.owl";
 	public static final String obdafile = "src/main/resources/imdb/seriology.obda";
 }

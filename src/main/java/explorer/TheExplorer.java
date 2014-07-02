@@ -367,39 +367,164 @@ public class TheExplorer {
 	}
 	
 	private ArrayList<Individual> query() {
-		ArrayList<Individual> ans = new ArrayList<Individual>();
 		if(currentRecord.answerSelection == null) {
-			
-			
-			
-			
-//			//BASE CASE
-//			//TEST
-//			String category = currentRecord.category;
-//			for(int i = 0; i < 6; i++) {
-//				Individual ind = new Individual("<"+ category + "/" + i + ">", category + " " + i);
-//				ans.add(ind);
-//			}
-//			try {
-//				Thread.sleep(500);
-//			} catch (InterruptedException e) {
-//				e.printStackTrace();
-//			}
+			if(currentRecord.category.equals(Global.catPerson)) {
+				return Individual.parseResultSet(currentRecord.category, qengine.initialPerson());
+			} else if(currentRecord.category.equals(Global.catCharacter)) {
+				return Individual.parseResultSet(currentRecord.category, qengine.initialCharacter());
+			} else if(currentRecord.category.equals(Global.catCompany)) {
+				return Individual.parseResultSet(currentRecord.category, qengine.initialCompany());
+			} else if(currentRecord.category.equals(Global.catSeries)) {
+				return Individual.parseResultSet(currentRecord.category, qengine.initialSeries());
+			} else if(currentRecord.category.equals(Global.catSeason)) {
+				return Individual.parseResultSet(currentRecord.category, qengine.initialSeason());
+			} else if(currentRecord.category.equals(Global.catEpisode)) {
+				return Individual.parseResultSet(currentRecord.category, qengine.initialEpisode());
+			} else if(currentRecord.category.equals(Global.catTag)) {
+				return Individual.parseResultSet(currentRecord.category, qengine.initialTag());
+			}
 		} else {
-//			//INDUCTION CASE
-//			//TEST
-//			String category = ed.nextCategory(currentRecord.schemaSelection, currentRecord.productionSelection);
-//			for(int i = 0; i < 6; i++) {
-//				Individual ind = new Individual("<"+ category + "/" + i + ">", category + " " + i);
-//				ans.add(ind);
-//			}
-//			try {
-//				Thread.sleep(500);
-//			} catch (InterruptedException e) {
-//				e.printStackTrace();
-//			}
+			String category = ed.nextCategory(currentRecord.schemaSelection, currentRecord.productionSelection);
+			int queryId = currentRecord.schemaSelection.getId();
+			if(queryId == 0) {
+				return Individual.parseResultSet(category,
+						qengine.queryTagToProduction(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else
+				if(queryId == 1) {
+				return Individual.parseResultSet(category,
+						qengine.queryPersonToProduction(currentRecord.answerSelection, currentRecord.roleSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 2) {
+				return Individual.parseResultSet(category,
+						qengine.queryPersonToPerson(currentRecord.answerSelection, currentRecord.roleSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 3) {
+				return Individual.parseResultSet(category,
+						qengine.queryPersonToCharacter(currentRecord.answerSelection));
+			} else if(queryId == 4) {
+				return Individual.parseResultSet(category,
+						qengine.queryCompanyToCompany(currentRecord.answerSelection));
+			} else if(queryId == 5) {
+				return Individual.parseResultSet(category,
+						qengine.queryCompanyToProduction(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 6) {
+				return Individual.parseResultSet(category,
+						qengine.queryCharacterToPerson(currentRecord.answerSelection));
+			} else if(queryId == 7) {
+				return Individual.parseResultSet(category,
+						qengine.queryCharacterToProduction(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 8) {
+				return Individual.parseResultSet(category,
+						qengine.queryCharacterToCharacter(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 9) {
+				return Individual.parseResultSet(category,
+						qengine.querySeriesToSeason(currentRecord.answerSelection));
+			} else if(queryId == 10) {
+				return Individual.parseResultSet(category,
+						qengine.querySeriesToEpisode(currentRecord.answerSelection));
+			} else if(queryId == 11) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToPerson(currentRecord.answerSelection,
+								currentRecord.roleSelection));
+			} else if(queryId == 12) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToCharacter(currentRecord.answerSelection));
+			} else if(queryId == 13) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToProduction_Year(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 14) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToTag(currentRecord.answerSelection,
+								currentRecord.tagSelection));
+			} else if(queryId == 15) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToCompany(currentRecord.answerSelection));
+			} else if(queryId == 16) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToProduction_Company(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 17) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToProduction_Country(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 18) {
+				return Individual.parseResultSet(category,
+						qengine.querySeasonToSeries(currentRecord.answerSelection));
+			} else if(queryId == 19) {
+				return Individual.parseResultSet(category,
+						qengine.querySeasonToEpisode(currentRecord.answerSelection));
+			} else if(queryId == 20) {
+				return Individual.parseResultSet(category,
+						qengine.querySeasonToSeason(currentRecord.answerSelection));
+			} else if(queryId == 21) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToPerson(currentRecord.answerSelection,
+								currentRecord.roleSelection));
+			} else if(queryId == 22) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToCharacter(currentRecord.answerSelection));
+			} else if(queryId == 23) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToProduction_Year(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 24) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToTag(currentRecord.answerSelection,
+								currentRecord.tagSelection));
+			} else if(queryId == 25) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToCompany(currentRecord.answerSelection));
+			} else if(queryId == 26) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToProduction_Company(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 27) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToProduction_Country(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 28) {
+				return Individual.parseResultSet(category,
+						qengine.queryEpisodeToSeries(currentRecord.answerSelection));
+			} else if(queryId == 29) {
+				return Individual.parseResultSet(category,
+						qengine.queryEpisodeToSeason(currentRecord.answerSelection));
+			} else if(queryId == 30) {
+				return Individual.parseResultSet(category,
+						qengine.queryEpisodeToEpisode(currentRecord.answerSelection));
+			} else if(queryId == 31) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToPerson(currentRecord.answerSelection,
+								currentRecord.roleSelection));
+			} else if(queryId == 32) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToCharacter(currentRecord.answerSelection));
+			} else if(queryId == 33) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToProduction_Year(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 34) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToTag(currentRecord.answerSelection,
+								currentRecord.tagSelection));
+			} else if(queryId == 35) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToCompany(currentRecord.answerSelection));
+			} else if(queryId == 36) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToProduction_Company(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			} else if(queryId == 37) {
+				return Individual.parseResultSet(category,
+						qengine.queryProductionToProduction_Country(currentRecord.answerSelection,
+								currentRecord.productionSelection));
+			}
 		}
-		return ans;
+		return null;
 	}
 
 	private void updateAnswers(ArrayList<Individual> queryAnswer) {
